@@ -1,0 +1,327 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ANCO CREATIONS | Web Developer Portfolio</title>
+    <meta name="description" content="A modern and responsive portfolio website for Anco Creations, a skilled web developer specializing in React and Next.js.">
+    <meta name="keywords" content="web developer, frontend developer, react, next.js, portfolio, javascript">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo"><span class="logo__initial">A</span>NCO CREATIONS</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <i class="fas fa-moon theme-toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <!-- Animated Background Slider -->
+            <div class="home__slider">
+                <div class="home__slide" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80');"></div>
+                <div class="home__slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');"></div>
+                <div class="home__slide" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80');"></div>
+                <div class="home__slide" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80');"></div>
+            </div>
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h1>Anco Creations</h1>
+                    <h3>Frontend Developer | React & Next.js Specialist</h3>
+                    <p>A passionate team creating seamless and powerful web experiences from scratch.</p>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button button--primary">Hire Us</a>
+                        <a href="#projects" class="button button--secondary">View Projects</a>
+                    </div>
+                </div>
+                <div class="home__social">
+                    <a href="https://wa.me/254745282806?text=Hello%20Anco%20Creations!%20I'm%20interested%20in%20your%20services." target="_blank" class="home__social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section__title">About Us</h2>
+            <div class="about__container container grid">
+                <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?auto=format&fit=crop&w=800&q=80" alt="Developer working on code" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Welcome to Anco Creations! We are a team with a knack for building beautiful, functional, and accessible digital experiences. With over 5 years in the field, we specialize in frontend development using modern technologies.
+                    </p>
+                    <div class="about__stack">
+                        <h4>Our Tech Stack</h4>
+                        <div class="about__stack-icons">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-react-original-wordmark colored"></i>
+                            <i class="devicon-nextjs-original-wordmark"></i>
+                            <i class="devicon-nodejs-plain-wordmark colored"></i>
+                            <i class="devicon-python-plain-wordmark colored"></i>
+                        </div>
+                    </div>
+                    <a href="services.html" class="button button--primary">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__container container grid">
+                <!-- Project 1 -->
+                <div class="project__card">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="E-commerce Platform Project" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">E-commerce Platform</h3>
+                        <p class="project__description">A full-featured e-commerce site built with the MERN stack.</p>
+                        <span class="project__tech">React</span>
+                        <span class="project__tech">Node.js</span>
+                        <span class="project__tech">MongoDB</span>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="project__link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="project__link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add 5 more project cards here following the same structure -->
+                 <div class="project__card">
+                    <img src="https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?auto=format&fit=crop&w=800&q=80" alt="Task Management App Project" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Task Management App</h3>
+                        <p class="project__description">A sleek and intuitive task manager with drag-and-drop functionality.</p>
+                        <span class="project__tech">Next.js</span>
+                        <span class="project__tech">TypeScript</span>
+                        <span class="project__tech">Tailwind CSS</span>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="project__link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="project__link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project__card">
+                    <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?auto=format&fit=crop&w=800&q=80" alt="Portfolio Website Project" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Portfolio Website</h3>
+                        <p class="project__description">A personal portfolio to showcase skills and projects (this one!).</p>
+                        <span class="project__tech">HTML</span>
+                        <span class="project__tech">CSS</span>
+                        <span class="project__tech">JavaScript</span>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="project__link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="project__link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Software Development -->
+                <div class="project__card">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=80" alt="Software Development Project" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Software Development</h3>
+                        <p class="project__description">Custom enterprise software to streamline business operations.</p>
+                        <span class="project__tech">Java</span>
+                        <span class="project__tech">Spring Boot</span>
+                        <span class="project__tech">PostgreSQL</span>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="project__link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="project__link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6: Company Profile Design -->
+                <div class="project__card">
+                    <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=800&q=80" alt="Company Profile Design Project" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Company Profile Design</h3>
+                        <p class="project__description">A modern and sleek company profile website with CMS integration.</p>
+                        <span class="project__tech">WordPress</span>
+                        <span class="project__tech">PHP</span>
+                        <span class="project__tech">Figma</span>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="project__link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank" class="project__link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section__title">Our Skills</h2>
+            <div class="skills__container container grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Frontend</h3>
+                    <div class="skills__data">
+                        <div class="skills__name"><i class="devicon-react-original colored"></i> React</div>
+                        <div class="skills__name"><i class="devicon-vuejs-plain colored"></i> Vue.js</div>
+                        <div class="skills__name"><i class="devicon-angularjs-plain colored"></i> Angular</div>
+                        <div class="skills__name"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</div>
+                    </div>
+                </div>
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Backend</h3>
+                    <div class="skills__data">
+                        <div class="skills__name"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                        <div class="skills__name"><i class="devicon-express-original colored"></i> Express</div>
+                        <div class="skills__name"><i class="devicon-python-plain colored"></i> Python</div>
+                        <div class="skills__name"><i class="devicon-django-plain colored"></i> Django</div>
+                    </div>
+                </div>
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Tools & Platforms</h3>
+                    <div class="skills__data">
+                        <div class="skills__name"><i class="devicon-git-plain colored"></i> Git</div>
+                        <div class="skills__name"><i class="devicon-docker-plain colored"></i> Docker</div>
+                        <div class="skills__name"><i class="devicon-figma-plain colored"></i> Figma</div>
+                        <div class="skills__name"><i class="devicon-amazonwebservices-original colored"></i> AWS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <h2 class="section__title">What Our Clients Say</h2>
+            <div class="testimonials__container container grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial__card">
+                    <p class="testimonial__quote">"Working with Anco Creations was a game-changer. Their attention to detail and commitment to quality is unparalleled. Highly recommended!"</p>
+                    <div class="testimonial__author">
+                        <h3 class="testimonial__name">Cosmas</h3>
+                        <span class="testimonial__title">CEO, Tech Solutions</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial__card">
+                    <p class="testimonial__quote">"The team at Anco Creations delivered a robust system that exceeded our expectations. Their professionalism and expertise are top-notch."</p>
+                    <div class="testimonial__author">
+                        <h3 class="testimonial__name">Frankline</h3>
+                        <span class="testimonial__title">Project Manager, Innovate Co.</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial__card">
+                    <p class="testimonial__quote">"From design to deployment, the process was seamless. Anco Creations truly understands client needs and delivers outstanding results."</p>
+                    <div class="testimonial__author">
+                        <h3 class="testimonial__name">George</h3>
+                        <span class="testimonial__title">Founder, Creative Minds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <p class="contact__description">We are currently available for new projects and collaborations. Feel free to reach out to discuss how we can help you succeed!</p>
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:anco.creations@outlook.com">anco.creations@outlook.com</a>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254745282806">0745 282 806</a>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://wa.me/254745282806?text=Hello%20Anco%20Creations!%20I'm%20interested%20in%20your%20services." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/your_form_id" method="POST" class="contact__form">
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Name</label>
+                        <input type="text" name="name" required class="contact__form-input">
+                    </div>
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Email</label>
+                        <input type="email" name="email" required class="contact__form-input">
+                    </div>
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Message</label>
+                        <textarea name="message" required class="contact__form-input"></textarea>
+                    </div>
+                    <button type="submit" class="button button--primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Anco Creations. All rights reserved.</p>
+            <ul class="footer__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-menu">
+            <a href="#contact" class="fab-item fab-item--ai" aria-label="Need Help?">
+                <i class="fas fa-question"></i>
+                <span>Need help?</span>
+            </a>
+            <a href="https://wa.me/254745282806?text=Hello%20Anco%20Creations!%20I'm%20interested%20in%20your%20services." target="_blank" class="fab-item fab-item--whatsapp" aria-label="Chat with us">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        <button class="fab-toggle" aria-label="Toggle chat menu">
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

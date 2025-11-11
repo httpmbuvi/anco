@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Services | ANCO CREATIONS</title>
+    <meta name="description" content="Explore the services offered by Anco Creations, including web design, system development, network configuration, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><span class="logo__initial">A</span>NCO CREATIONS</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link active-link">Services</a></li>
+                    <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <i class="fas fa-moon theme-toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <h2 class="section__title">Our Services</h2>
+            <div class="services__container container grid">
+                
+                <!-- Service 1: Website Development -->
+                <div class="service__card">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Website Development" class="service__img">
+                    <div class="service__data">
+                        <h3 class="service__title">Website Development</h3>
+                        <p class="service__description">We build modern, responsive, and user-friendly websites that capture your brand's essence and engage your audience effectively.</p>
+                        <div class="service__price">Starting at Ksh 65,000</div>
+                    </div>
+                </div>
+
+                <!-- Service 2: School Profile -->
+                <div class="service__card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="School Profile" class="service__img">
+                    <div class="service__data">
+                        <h3 class="service__title">School Profile</h3>
+                        <p class="service__description">Designing and developing comprehensive digital profiles and management systems for educational institutions.</p>
+                        <div class="service__price">Contact for Quote</div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Company Profile -->
+                <div class="service__card">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Company Profile" class="service__img">
+                    <div class="service__data">
+                        <h3 class="service__title">Company Profile</h3>
+                        <p class="service__description">Creating professional and compelling digital profiles that showcase your company's strengths, mission, and services.</p>
+                        <div class="service__price">Starting at Ksh 80,000</div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Network Configuration -->
+                <div class="service__card">
+                    <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?auto=format&fit=crop&w=800&q=80" alt="Network Configuration" class="service__img">
+                    <div class="service__data">
+                        <h3 class="service__title">Network Configuration</h3>
+                        <p class="service__description">Designing and implementing secure and efficient network infrastructures to ensure seamless connectivity for your business.</p>
+                        <div class="service__price">Starting at Ksh 50,000</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Anco Creations. All rights reserved.</p>
+            <ul class="footer__links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-menu">
+            <a href="index.html#contact" class="fab-item fab-item--ai" aria-label="Need Help?">
+                <i class="fas fa-question"></i>
+                <span>Need help?</span>
+            </a>
+            <a href="https://wa.me/254745282806?text=Hello%20Anco%20Creations!%20I'm%20interested%20in%20your%20services." target="_blank" class="fab-item fab-item--whatsapp" aria-label="Chat with us">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        <button class="fab-toggle" aria-label="Toggle chat menu">
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
